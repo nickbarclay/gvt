@@ -98,6 +98,7 @@ def main():
         partial_export_file = partial(export_file, out_path=out_path)
 
         # create and process mp pool
+        # another comment
         pool = Pool(10)
         pool.map(partial_export_file, flist)
         pool.close()
